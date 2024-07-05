@@ -1,0 +1,35 @@
+let value = 3
+let negvalue = -value
+console.log(negvalue);
+
+// console.log(2+2);
+// console.log(2-2);
+// console.log(2*2);
+// console.log(2/2);
+// console.log(2%2);
+// console.log(2**2);
+
+let str1 = "hello"
+let str2 = " hitesh"
+
+let str3 = str1 + str2
+console.log(str3);
+
+console.log("1" + 2);
+console.log(1 + "2");
+console.log("1"+2+2);
+console.log(1+2+"2");
+//  pehla string to sab kuch string ki tarah count kiya jayega
+// Last wala string hai to pehle ke saare digits as a number count kiye jayenge means add ya subtract ho jayenge 
+
+console.log(+true);
+console.log(+"");
+
+let gameCounter = 100
+++gameCounter;
+console.log(gameCounter);
+
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Increment (operator precedence prefix and postfix)
+
+// link to study type-conversion
+// https://tc39.es/ecma262/multipage/abstract-operations.html#sec-type-conversion
