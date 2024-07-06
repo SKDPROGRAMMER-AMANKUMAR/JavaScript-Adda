@@ -1,0 +1,26 @@
+// Stack(for Primitive ), Heap (Non-Primitive)
+
+let myYoutubename = "hiteshchoudharydotcom"
+
+let anothername = myYoutubename
+anothername = "chaiaurcode"
+
+console.log(anothername);
+console.log(myYoutubename);
+
+let myDetails = {
+    name:"Shaurya",
+    Email:"User@google.com",
+    UserId : "12345"
+}
+
+// console.log(myDetails);
+// myDetails.Email = "AK@google.com"
+// console.log(myDetails);
+
+let YourDetails = myDetails
+
+YourDetails.UserId = "67890"
+
+console.log(YourDetails.UserId);
+console.log(myDetails.UserId);
