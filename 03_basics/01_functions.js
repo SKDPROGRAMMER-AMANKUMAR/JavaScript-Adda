@@ -34,3 +34,39 @@ function loginUserMessage(username = "sam"){
 
 // console.log(loginUserMessage("Hitesh"))
 console.log(loginUserMessage())
+
+
+// ++++ Function with Object and Array in JavaScript ++++++++
+
+function calculateCartPrice(...num1){   //-->> Rest Operator
+    return num1
+}
+
+// console.log(calculateCartPrice(200, 400, 500, 2000));
+
+
+const user = {
+    username: "hitesh",
+    price: 199
+}
+
+function handleObject(anyOBJECT){
+    console.log(`Username is ${anyOBJECT.username} and price is ${anyOBJECT.price}`);
+
+}
+
+// handleObject(user)
+handleObject({
+    username: "sam",
+    price: 399
+})
+
+const myNewArray = [200,400,100,600]
+
+function returnSecondValue(getArray){
+     return getArray[1]
+}
+
+// console.log(returnSecondValue(myNewArray));
+console.log(returnSecondValue([200,400,500,1000]));
+
