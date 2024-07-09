@@ -46,13 +46,40 @@ const users = [
 ]
 
 users[1].email
-console.log(tinderUser);
+// console.log(tinderUser);
 
 console.log(Object.keys(tinderUser)); // -- it'll return all the keys of object in array form 
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty('isLogged'));
+// console.log(tinderUser.hasOwnProperty('isLogged'));
 
 
 // refer "MDN object javascript" for further methods
+
+// ---------- De-structured of Object --------------
+
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseinstructor: "hitesh"
+}
+
+// course.courseinstructor
+
+const {courseinstructor:instructor} = course // --->> De-structuring of object
+
+// console.log(courseinstructor);
+console.log(instructor);
+
+// {                               //--->> JSON API
+//     "name": "hitesh",
+//     "coursename": "js in hindi",
+//     "price":"free"
+// }
+
+[                       //--->> JSON API
+    {},
+    {},
+    {}
+]
