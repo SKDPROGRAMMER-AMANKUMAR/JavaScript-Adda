@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM learning</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div >
+    <h1 id="title" class="heading">
+        DOM learning on Chai aur code
+        <span style="display: none;">test text</span>
+    </h1>
+    <h2>
+        Lorem ipsume dolor sit.
+    </h2>
+    <h2>
+        Lorem ipsume dolor sit.
+    </h2>
+    <h2>
+        Lorem ipsume dolor sit.
+    </h2>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <input type="password" name="" id="">
+
+    <ul>
+        <li class="list-item">One</li>
+        <li class="list-item">Two</li>
+        <li class="list-item">Three</li>
+        <li class="list-item">Four</li>
+    </ul>
+</div>
+</body>
+</html>
+
+
+
+<!-- ---------------------------Important Things----------------
+
+1.NodeList is looking like array but it is not Array , while it consist "ForEach" property which is the property of Array but it is not fully Array
+2. The "querySelector()" property will only select first tag or first objects depending what you've entered in { paranthesis()}
+3. HTML Collection is not array and it also doesn't contain the {ForEach} method , you've to convert it into Array , for using the property of it,
+we can also convert {NodeList} into an array depending on the use Cases -->
+<!-- 4. Array.from() method , you can convert Nodelist and HTML Collection into array by using this method  -->
