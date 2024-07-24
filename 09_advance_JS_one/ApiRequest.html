@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body  style="background-color: #212121;">
+    0 UNSENT Client has been created, open() not called yet.
+1   OPENED open() has been called.
+2   HEADERS_RECEIVED send() has been called, and headers and status are available. 
+3   LOADING Downloading; responseText holds partial data.
+4   DONE The operation is complete
+</body>
+  <script>
+    const requestUrl = 'https://api.github.com/users/hiteshChoudhary'
+     const Hero = new XMLHttpRequest()
+     Hero.open('GET', requestUrl)
+     Hero.onreadystatechange = function() {
+         console.log(Hero.readyState);
+         if (Hero.readyState === 4) {
+            const data = JSON.parsse(this.responseText)
+            console.log(typeof data);
+            console.log(data.followers);
+         }
+     }
+     Hero.send()
+
+    //  links used for completing this lecture --->>
+    // 1.https://api.github.com/users/hiteshChoudhary
+    //    2.https://randomuser.me/
+        //  3.https://jsonformatter.org/
+        //   4.https://randomuser.me/api/
+        //   5.https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequestEventTarget
+// --------------------assignment-----------------
+
+// Create a card  and put an image on it and below the image display the follower count through Javascript
+
+     const div = document.createElement('div')
+     div.setAttribute('id', 'divine')
+     div.style.height = '65vh'
+     div.style.width = '40vw'
+     div.style.background = 'white'
+     div.style.display = 'flex'
+     div.style.justifyContent = 'Center'
+     div.style.flexDirection = 'column'
+     div.style.alignItems = 'center'
+     div.style.marginTop = '45px'
+     document.body.appendChild(div)
+
+     const image = document.createElement('img')
+     image.src = 'https://avatars.githubusercontent.com/u/11613311?v=4'
+     image.style.height = '254px'
+     image.style.width = 'auto'
+     image.style.position = 'relative'
+     image.style.top = '127px'
+     div.appendChild(image)
+
+     const Para = document.createElement('p')
+     Para.textContent = '26733 followers'
+     Para.style.fontSize = '23px'
+     Para.style.fontFamily = 'sans-serif'
+     Para.style.paddingTop = '173px'
+     div.appendChild(Para)
+  </script>
+</html>
